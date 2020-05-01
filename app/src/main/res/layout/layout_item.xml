@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="30dp"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="40dp"
+    android:innerRadius="0dp"
+    android:shape="ring"
+    android:thicknessRatio="1.9"
+
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#A5A2A2"
+        >
+        <TextView
+            android:id="@+id/state"
+            android:textColor="#000"
+            android:fontFamily="@font/aclonica"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="name"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:textSize="24sp"/>
+
+        <TextView
+            android:id="@+id/cnfmd"
+            android:layout_below="@+id/state"
+            android:fontFamily="@font/anonymous_pro"
+            android:textColor="#514D4D"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="cnfmd"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/actv"
+            android:layout_below="@+id/cnfmd"
+            android:fontFamily="@font/anonymous_pro"
+            android:textColor="#514D4D"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Actv"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/rcvrd"
+            android:layout_below="@+id/actv"
+            android:fontFamily="@font/anonymous_pro"
+            android:textColor="#514D4D"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Rcvrd"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/dcsd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rcvrd"
+            android:layout_marginLeft="20dp"
+            android:fontFamily="@font/anonymous_pro"
+            android:text="Dcsd"
+            android:textColor="#514D4D"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dcsd"
+            android:layout_marginLeft="20dp"
+            android:fontFamily="@font/anonymous_pro"
+            android:text="Dcsd"
+            android:textColor="#514D4D"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

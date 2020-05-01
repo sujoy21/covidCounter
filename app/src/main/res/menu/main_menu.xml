@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+
+        <item
+            android:id="@+id/nav_home"
+            android:title="Home"
+            android:icon="@drawable/ic_home_black_24dp"
+            />
+
+        <item
+            android:id="@+id/nav_daily"
+            android:title="Daily Count"
+            android:icon="@drawable/ic_access_time_black_24dp"
+            />
+
+        <item
+            android:id="@+id/nav_statewise"
+            android:title="Statewise"
+            android:icon="@drawable/ic_directions_railway_black_24dp"
+            />
+
+        <item
+            android:id="@+id/nav_real"
+            android:title="Real Time"
+            android:icon="@drawable/ic_autorenew_black_24dp"
+            />
+
+        <item
+            android:id="@+id/nav_stats"
+            android:title="Statistic"
+            android:icon="@drawable/ic_data_usage_black_24dp"
+            />
+
+    </group>
+
+
+        <item
+            android:title="Feedback">
+
+            <menu>
+                <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_feed"
+                    android:title="Feedback"
+                    android:icon="@drawable/ic_email_black_24dp"
+                    />
+                </group>
+            </menu>
+        </item>
+
+
+
+    <item android:title="Communication">
+
+        <menu>
+
+            <group android:checkableBehavior="single">
+
+            <item
+                android:id="@+id/nav_share"
+                android:title="Share"
+                android:icon="@drawable/ic_share_black_24dp"/>
+
+            <item
+                android:id="@+id/nav_help"
+                android:title="Help Line"
+                android:icon="@drawable/ic_call_black_24dp"/>
+
+            </group>
+        </menu>
+
+    </item>
+
+</menu>

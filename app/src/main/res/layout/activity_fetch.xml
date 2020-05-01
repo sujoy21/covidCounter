@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/earth2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start"
+    android:id="@+id/drawerLayout2"
+    tools:context=".Fetch">
+
+
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/nav_view2"
+        app:headerLayout="@layout/header"
+        app:menu="@menu/main_menu"
+        android:layout_gravity="start"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"/>
+
+
+    <TextView
+        android:id="@+id/dailyCount"
+        android:layout_below="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginVertical="40dp"
+        android:fontFamily="@font/baloo"
+        android:gravity="center"
+        android:text="Daily Updated Count"
+        android:textColor="#000"
+        android:textSize="50dp"
+        android:textStyle="bold" />
+
+
+
+
+    <TableLayout
+        android:id="@+id/table"
+        android:layout_below="@+id/date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginVertical="20dp"
+        >
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/rounded"
+                android:fontFamily="@font/amita"
+                android:gravity="center"
+                android:padding="4dp"
+                android:text="Daily Confirmed"
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded"
+                android:fontFamily="@font/amita"
+                android:text="Daily Deceased"
+                android:textSize="20dp"
+                android:padding="4dp"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:layout_weight="1"
+                android:gravity="center"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded"
+                android:fontFamily="@font/amita"
+                android:text="Daily Recovered"
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:padding="4dp"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:gravity="center"/>
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/dailyConfirmed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/amita"
+                android:textColor="#000"
+                android:textSize="20sp"
+                android:layout_weight="1"
+                android:background="@drawable/round_white"
+                android:paddingTop="4dp"
+                android:layout_marginBottom="1dp"
+                android:layout_marginHorizontal="1dp"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/dailyDeceased"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/amita"
+                android:textColor="#000"
+                android:textSize="20sp"
+                android:layout_weight="1"
+                android:background="@drawable/round_white"
+                android:paddingTop="4dp"
+                android:layout_marginBottom="1dp"
+                android:layout_marginRight="1dp"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/dailyRecovered"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/amita"
+                android:textColor="#000"
+                android:textSize="20sp"
+                android:layout_weight="1"
+                android:background="@drawable/round_white"
+                android:paddingTop="4dp"
+                android:layout_marginBottom="1dp"
+                android:layout_marginRight="1dp"
+                android:gravity="center"/>
+
+
+        </TableRow>
+    </TableLayout>
+
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:textSize="20dp"
+        android:fontFamily="@font/amita"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dailyCount"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+
+        android:textColor="#000"
+        />
+
+
+
+
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/table"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"
+        android:outlineAmbientShadowColor="#000"
+        />
+
+    </RelativeLayout>
+
+</androidx.drawerlayout.widget.DrawerLayout>
